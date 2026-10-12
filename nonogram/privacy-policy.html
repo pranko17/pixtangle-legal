@@ -50,8 +50,9 @@
   <p>
     Nonogram is an offline puzzle game. We do not require an account, we do not
     operate our own servers, and we do not ourselves collect, store, or share any
-    personal information. Your game progress (stitched scenes, hints, settings) is
-    stored only locally on your device and is deleted when you uninstall the App.
+    personal information. Your game progress (stitched scenes, hints, purchases,
+    settings) is stored locally on your device; the only copies are the backups
+    in your own iCloud or Google account described below.
   </p>
 
   <h2>Advertising</h2>
@@ -95,11 +96,23 @@
     </li>
   </ul>
 
-  <h2>Crash reporting and analytics</h2>
+  <h2>In-app purchases</h2>
   <p>
-    To keep the App stable and understand how it is played, we use
-    <strong>Firebase Crashlytics</strong> and <strong>Firebase Analytics</strong>
-    (services provided by Google). They collect:
+    The App may offer optional in-app purchases. Payments are processed entirely
+    by the Apple App Store or Google Play under their own terms and privacy
+    policies; we never see your payment details, name, or billing address. To
+    deliver a purchase, the App receives from the store only a confirmation of
+    the transaction (the product and a transaction identifier), and it keeps a
+    record of what you bought on your device.
+  </p>
+
+  <h2>Crash reporting, analytics, and remote configuration</h2>
+  <p>
+    To keep the App stable, understand how it is played, and tune it without an
+    update, we use <strong>Firebase Crashlytics</strong>,
+    <strong>Firebase Analytics</strong>, and <strong>Firebase Remote Config</strong>
+    with <strong>Firebase A/B Testing</strong> (services provided by Google). They
+    collect:
   </p>
   <ul>
     <li>
@@ -107,8 +120,14 @@
       technical state of the App at the moment of a crash;
     </li>
     <li>
-      anonymous usage events (for example, that a scene was started or finished)
-      together with app instance identifiers, device and app information.
+      anonymous usage events (for example, that a scene was started or finished,
+      or that a purchase was completed and its price) together with app instance
+      identifiers, device and app information;
+    </li>
+    <li>
+      a Firebase installation identifier used to deliver configuration values
+      and, in experiments, to place the App in a test group (for example, to
+      compare two versions of a screen).
     </li>
   </ul>
   <p>
@@ -119,27 +138,52 @@
     documentation</a>.
   </p>
 
-  <h2>Data we collect ourselves</h2>
+  <h2>Game Center and Google Play Games</h2>
   <p>
-    Beyond the services described above, none. The App works offline apart from
-    advertising and diagnostics, and we have no access to your game progress.
-    If you write to us by email from the App, we receive your email address and
-    your message and use them only to reply to you.
+    If you are signed in to Apple Game Center on iOS (or Google Play Games on
+    Android), the App sends your scores and achievements there so they appear on
+    leaderboards and in your profile. This data is handled by Apple or Google
+    under their privacy policies and is linked to your Game Center or Play Games
+    profile, not to us.
   </p>
 
-  <h2>Sharing</h2>
+  <h2>Reminders</h2>
   <p>
-    When you share a finished embroidery, the App passes the picture to your
-    device’s share sheet, and it goes only to the app or person you choose. It
-    is not sent to us.
+    If you allow notifications, the App schedules gentle reminders locally on
+    your device. They are not sent through our servers, and you can turn them off
+    in the App or in your device settings at any time.
   </p>
 
   <h2>Progress backups</h2>
   <p>
-    On Android, your game progress may be backed up to your personal Google
-    Drive through Android Auto Backup, so that it survives reinstalling the App.
-    The backup contains only game progress, stays within your own Google account,
-    and is never transmitted to us.
+    To let your game progress survive reinstalling the App, it may be backed up
+    to your own cloud storage: your personal iCloud account on iOS and your
+    personal Google Drive (via Android Auto Backup) on Android. These backups
+    contain only game progress, stay within your own Apple/Google account, and
+    are never transmitted to us.
+  </p>
+
+  <h2>Sharing, ratings, and support</h2>
+  <ul>
+    <li>
+      When you share a finished embroidery, the App passes the picture to your
+      device’s share sheet, and it goes only to the app or person you choose.
+    </li>
+    <li>
+      Requests to rate the App use the App Store or Google Play rating dialog;
+      your rating is handled by Apple or Google.
+    </li>
+    <li>
+      If you write to us by email from the App, we receive your email address and
+      your message and use them only to reply to you.
+    </li>
+  </ul>
+
+  <h2>Data we collect ourselves</h2>
+  <p>
+    Beyond the services described above, none. We have no access to your game
+    progress, and we do not collect contact details or any other personal data,
+    except the email you choose to send us.
   </p>
 
   <h2>Children</h2>
@@ -151,8 +195,8 @@
 
   <h2>Changes to this policy</h2>
   <p>
-    If we add features that change how data is handled (for example, in-app
-    purchases), we will update this policy and change the effective date above.
+    If we change how the App handles data, we will update this policy and change
+    the effective date above.
   </p>
 
   <h2>Contact</h2>
